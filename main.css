@@ -6,8 +6,8 @@ body, html{
 .super-grid{
     display: grid;
     grid-template: repeat(12, 1fr) / repeat(15, 1fr);
-    max-width: 850px;
-    min-width: 710px;
+    max-width: 1024px;
+    min-width: 900px;
     border: 2px solid black;
     justify-content: center;
     height: 100%;
@@ -57,7 +57,7 @@ body, html{
 /*Imagen */
 .image-container{
    grid-row: 3 / 9;
-   grid-column: 3/ 13;
+   grid-column: 3/ 14;
    
 }
 .image-container img{
@@ -68,13 +68,13 @@ body, html{
 /*Grilla de Frente */
 .grid-front{
     grid-row: 6 / 10;
-    grid-column: 8 / 14;
+    grid-column: 8 / 15;
     background-color: red;
     opacity: 0.5; /*Transparencia del 70% */
 }
 .top1-point{
     grid-row: 9;
-    grid-column: 13;
+    grid-column: 14;
     width: 10px;
     height: 10px;
     background: white;
@@ -87,7 +87,7 @@ body, html{
 }
 .center1-point{
     grid-row: 9;
-    grid-column: 13;
+    grid-column: 14;
     width: 10px;
     height: 10px;
     background: white;
@@ -99,7 +99,7 @@ body, html{
 }
 .bottom1-point{
     grid-row: 9;
-    grid-column: 13;
+    grid-column: 14;
     width: 10px;
     height: 10px;
     background: white;
@@ -132,9 +132,9 @@ body, html{
 }
 .subtitle-top-right{
     grid-row: 1 / 2;
-    grid-column: 13 / 14;
+    grid-column: 14 / 15;
     display: flex;
-    justify-content: flex-end;/*Empieza a la derecha */
+    justify-content: flex-start;/*Empieza a la izquierda */
     align-items: center;/* flex-start Empieza arriba */
     font-style: italic;
     font-size: 0.7rem;
@@ -150,9 +150,9 @@ body, html{
 }
 .number-bottom-right{
     grid-row: 11 / 12;
-    grid-column: 14;
+    grid-column: 14 /15;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-weight: bold;
 }
